@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Aloka Multy System - Daraz-style online shop for melamine cupboards, wardrobes and custom furniture in Sri Lanka.">
+  <title>Aloka Multy System | Online Furniture Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- top strip -->
+  <div class="topbar">
+    <div class="wrap topbar-in">
+      <span>🚚 Island-wide delivery available</span>
+      <div class="topbar-links">
+        <a href="#contact">Sell With Us</a>
+        <a href="#contact">Track Order</a>
+        <a href="#contact">Help</a>
+        <a href="tel:+94753534777">📞 075 353 4777</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- header -->
+  <header class="header">
+    <div class="wrap header-in">
+      <a class="brand" href="#home">
+        <img src="assets/logo.jpg" alt="Aloka Multy System logo">
+        <div><strong>ALOKA</strong><span>MULTY SYSTEM</span></div>
+      </a>
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search for cupboards, wardrobes, shoe cabinets...">
+        <button id="searchBtn" aria-label="Search">🔍</button>
+      </div>
+      <div class="header-icons">
+        <a href="#" class="icon-btn" title="Wishlist">❤️</a>
+        <button class="icon-btn cart-btn" id="cartOpen" title="Cart">🛒<span class="cart-count" id="cartCount">0</span></button>
+      </div>
+    </div>
+    <nav class="catnav">
+      <div class="wrap catnav-in" id="catPills">
+        <button class="pill active" data-cat="all">All</button>
+        <button class="pill" data-cat="wardrobes">Wardrobes</button>
+        <button class="pill" data-cat="cupboards">Cupboards</button>
+        <button class="pill" data-cat="drawers">Drawers</button>
+        <button class="pill" data-cat="shoe">Shoe Cabinets</button>
+        <button class="pill" data-cat="custom">Custom Made</button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- hero banner -->
+  <main id="home">
+    <section class="hero wrap">
+      <div class="hero-copy">
+        <p class="eyebrow">MEGA FURNITURE SALE 🎉</p>
+        <h1>Melamine Furniture<br><span>up to 25% OFF</span></h1>
+        <p>Cupboards, wardrobes, drawers & custom storage — made in Sri Lanka for Sri Lankan homes.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#deals">Shop Flash Deals ⚡</a>
+          <a class="btn ghost" href="https://wa.me/94753534777?text=Hello%20Aloka%20Multy%20System%2C%20I%20want%20to%20order%20furniture." target="_blank" rel="noopener">WhatsApp Order ↗</a>
+        </div>
+        <div class="trust-row">
+          <div><b>💳</b><small>Pay on delivery</small></div>
+          <div><b>🛠️</b><small>Custom sizes</small></div>
+          <div><b>⭐</b><small>4.8/5 rated store</small></div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <img src="assets/cupboard-2.jpg" alt="Melamine 3 door wardrobe">
+        <div class="hero-badge"><span>Flash Deal</span><strong>-15%</strong></div>
+      </div>
+    </section>
+
+    <!-- flash sale -->
+    <section class="wrap section" id="deals">
+      <div class="section-title orange">
+        <h2>⚡ Flash Sale</h2>
+        <div class="countdown" id="countdown">
+          <span>Ends in</span>
+          <b id="cdH">00</b>:<b id="cdM">00</b>:<b id="cdS">00</b>
+        </div>
+        <a class="more-link" href="#products">SHOP NOW →</a>
+      </div>
+      <div class="flash-grid" id="flashGrid"></div>
+    </section>
+
+    <!-- products -->
+    <section class="wrap section" id="products">
+      <div class="section-title">
+        <h2>🛍️ Just For You</h2>
+        <span class="muted" id="resultCount"></span>
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+      <p class="no-results" id="noResults" hidden>No products found — try another search.</p>
+    </section>
+
+    <!-- why us -->
+    <section class="section why">
+      <div class="wrap why-grid">
+        <div><i>🚚</i><h3>Fast Delivery</h3><p>Island-wide delivery. Ask for your area.</p></div>
+        <div><i>🛡️</i><h3>Quality Checked</h3><p>Every cupboard inspected before dispatch.</p></div>
+        <div><i>🔧</i><h3>Custom Orders</h3><p>Send your measurements, we build to fit.</p></div>
+        <div><i>💬</i><h3>WhatsApp Support</h3><p>Message us anytime — quick replies.</p></div>
+      </div>
+    </section>
+
+    <!-- contact -->
+    <section class="wrap section" id="contact">
+      <div class="contact-card">
+        <div>
+          <p class="eyebrow">CONTACT US</p>
+          <h2>Aloka Multy System</h2>
+          <p>Melamine furniture • Cupboards • Wardrobes • Custom storage</p>
+        </div>
+        <div class="contact-grid">
+          <a href="tel:+94753534777"><small>PHONE / WHATSAPP</small><b>075 353 4777</b></a>
+          <div><small>SHOP LOCATION</small><b>Meegoda Economic Centre</b></div>
+          <a href="https://wa.me/94753534777" target="_blank" rel="noopener"><small>MESSAGE US</small><b>WhatsApp ↗</b></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-in">
+      <div>
+        <strong>ALOKA MULTY SYSTEM</strong>
+        <p>© <span id="year"></span> • Quality Melamine Furniture, Sri Lanka</p>
+      </div>
+      <a href="#home">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <!-- cart drawer -->
+  <div class="overlay" id="overlay"></div>
+  <aside class="cart-drawer" id="cartDrawer">
+    <div class="cart-head">
+      <h3>🛒 My Cart (<span id="cartItems">0</span>)</h3>
+      <button id="cartClose">✕</button>
+    </div>
+    <div class="cart-body" id="cartBody"></div>
+    <div class="cart-foot">
+      <div class="cart-total"><span>Subtotal</span><b id="cartTotal">Rs. 0</b></div>
+      <button class="btn primary full" id="checkoutBtn">Checkout via WhatsApp ↗</button>
+    </div>
+  </aside>
+
+  <div class="toast" id="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
